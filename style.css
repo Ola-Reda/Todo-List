@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f5f5f5;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/*start header*/
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 14px;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav p {
+    font-size: 20px;
+    font-weight: 500;
+}
+header nav input {
+    color: #495057;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    outline: none;
+    caret-color: #495057;
+    transition: all .3s ease-in;
+}
+header nav input:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+/*end header*/
+/*start main*/
+main {
+    margin-top: 45px;
+}
+main .box {
+    width: 65%;
+    margin: auto;
+}
+main h1 {
+    text-align: left;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+main .form-box {
+    background: #fff;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 0px 0px 10px #c1c1c1;
+}
+main form {
+    display: flex;
+} 
+main form input {
+    width: 70%;
+    color: #495057;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    outline: none;
+    transition: all .3s ease-in;
+}
+main form input:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+main form .btn {
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .4s ease-in;
+}
+main form .add-btn {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+main form .delete-btn {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+main form .add-btn:hover {
+    background-color: #1e7e34;
+    border-color: #1e7e34;
+}
+main form .delete-btn:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+}
+@media (max-width: 1200px) {
+    main form input {
+        width: 60%;
+    }
+}
+@media (max-width: 991px) {
+    main h1 {
+        font-size: 30px;
+    }
+    main form input {
+        width: 50%;
+    }
+}
+@media (max-width: 670px) {
+    main h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+/*end main*/
