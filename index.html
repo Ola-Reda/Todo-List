@@ -6,7 +6,8 @@
         <meta name="description" content="TO Do List">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>To Do List</title>
-        <link rel="icon" href="chef-hat-png-9.png">
+        <link rel="icon" href="icon.png">
+        <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -28,21 +29,24 @@
                 <div class="box">
                     <h1>Welcome in Todo List Application</h1>
                     <div class="form-box">
-                        <form>
+                        <div class="form">
                             <input type="text" class="task" placeholder="Enter your task">
                             <div class="btns">
-                                <button type="button" class="btn add-btn">Add Task</button>
+                                <button type="button" class="btn add-btn green-btn">Add Task</button>
+                                <button type="button" class="btn save-btn green-btn">Save Task</button>
                                 <button type="button" class="btn delete-btn">Delete All</button>
                             </div>
-                        </form>
+                        </div>
                         <div class="output">
-                            <table class="table"></table>
+                            <table class="table">
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
         <!--start main-->
+        <script src="js/all.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

@@ -1,30 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     background: #f5f5f5;
 }
+
 .container {
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
+
 @media (min-width: 768px) {
     .container {
         width: 750px;
     }
 }
+
 @media (min-width: 992px) {
     .container {
         width: 970px;
     }
 }
+
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
@@ -36,15 +41,18 @@ header {
     color: white;
     padding: 14px;
 }
+
 header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 header nav p {
     font-size: 20px;
     font-weight: 500;
 }
+
 header nav input {
     color: #495057;
     padding: 10px;
@@ -54,6 +62,7 @@ header nav input {
     caret-color: #495057;
     transition: all .3s ease-in;
 }
+
 header nav input:focus {
     border-color: #80bdff;
     box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
@@ -63,26 +72,31 @@ header nav input:focus {
 main {
     margin-top: 45px;
 }
+
 main .box {
     width: 65%;
     margin: auto;
 }
+
 main h1 {
     text-align: left;
     font-size: 40px;
     font-weight: 400;
     margin-bottom: 20px;
 }
+
 main .form-box {
     background: #fff;
     text-align: center;
     padding: 40px;
     box-shadow: 0px 0px 10px #c1c1c1;
 }
-main form {
+
+main .form {
     display: flex;
 } 
-main form input {
+
+main .form input {
     width: 70%;
     color: #495057;
     padding: 10px;
@@ -94,40 +108,100 @@ main form input {
     outline: none;
     transition: all .3s ease-in;
 }
-main form input:focus {
+
+main .form input:focus {
     border-color: #80bdff;
     box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
 }
-main form .btn {
+
+main .form .btns {
+    display: flex;
+    align-items: center;
+}
+
+main .form .btn {
     color: white;
-    font-size: 15px;
-    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: inherit;
+    padding: 9px 9px;
     border: 1px solid white;
-    border-radius: 4px;
+    border-radius: 3px;
     cursor: pointer;
     transition: all .4s ease-in;
 }
-main form .add-btn {
+
+main .form .save-btn {
+    display: none;
+}
+
+main .form .green-btn {
     background-color: #28a745;
     border-color: #28a745;
 }
-main form .delete-btn {
+
+main .form .delete-btn {
     background-color: #dc3545;
     border-color: #dc3545;
+    margin-left: 8px;
 }
-main form .add-btn:hover {
+
+main .form .green-btn:hover {
     background-color: #1e7e34;
     border-color: #1e7e34;
 }
-main form .delete-btn:hover {
+main .form .delete-btn:hover {
     background-color: #c82333;
     border-color: #c82333;
 }
+
+main .output table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+main table tr:nth-of-type(odd) {
+    background: rgba(0,0,0,.05);
+}
+
+main table td {
+    padding: 14px;
+    text-align: left;
+    border-top: 1px solid rgba(128, 128, 128, 0.349);
+}
+
+main table .btn {
+    font-family: inherit;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+main table .edit-btn {
+    color: #007bff;  
+}
+
+main table .complete-btn {
+    color: #28a745;  
+}
+
+main table .delete-btn {
+    color: #dc3545;  
+}
+
+main table svg {
+    margin-right: -3px;
+}
+
 @media (max-width: 1200px) {
     main form input {
         width: 60%;
     }
 }
+
 @media (max-width: 991px) {
     main h1 {
         font-size: 30px;
@@ -136,6 +210,7 @@ main form .delete-btn:hover {
         width: 50%;
     }
 }
+
 @media (max-width: 670px) {
     main h1 {
         font-size: 20px;
@@ -143,3 +218,8 @@ main form .delete-btn:hover {
     }
 }
 /*end main*/
+/*complete task*/
+.complete {
+    text-decoration: line-through;
+    color: green;
+}
